@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">>
+<head>
+    <meta charset="UTF-8">
+    <title>Create Stock</title>
+</head>
+<body>
+<div>
+    <form method="post" th:action="${'/stocks/add'}">
+        <div>
+            <label for="name">Stock Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="Quantity">Quantity</label>
+            <input type="text" name="Quantity" id="Quantity" required>
+        </div>
+        <div>
+            <label for="costPrice">costPrice</label>
+            <input type="text" name="costPrice" id="costPrice" required>
+        </div>
+        <div>
+            <label for="sellingPrice">Selling Price</label>
+            <input type="text" name="sellingPrice" id="sellingPrice" required>
+        </div>
+        <div>
+            <label for="Category">Category Type</label>
+            <input type="text" name="Category" id="Category" required>
+        </div>
+        <div>
+            <label for="SKU">SKU</label>
+            <input type="text" name="SKU" id="SKU" required>
+        </div>
+        <div><button type="submit" name="submit">Update</button></div>
+    </form>
+</div>
+</body>
+</html>

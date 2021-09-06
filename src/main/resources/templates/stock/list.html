@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>list Stocks</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>S/N</th>
+        <th>Stock Name</th>
+        <th>Quantity</th>
+        <th>Stock CostPrice</th>
+        <th>Stock SellingPrice</th>
+        <th>Stock Category</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <tr th:each="s : *{stocks}">
+        <td>th:text="${'count++'}"</td>
+        <td>th:text="${'s.getName()'}"</td>
+        <td>th:text="${'s.getQuantity()'}"</td>
+        <td>th:text="${'s.getCostPrice()'}"</td>
+        <td>th:text="${'s.getSellingPrice()'}"</td>
+        <td>th:text="${'s.getCategory()'}"</td>
+        <td>th:text="${'s.getsku()'}"</td>
+        <td>Edit</td>
+        <td>Delete</td>
+    </tr>
+    <tr></tr>
+</table>
+
+</body>
+</html>
